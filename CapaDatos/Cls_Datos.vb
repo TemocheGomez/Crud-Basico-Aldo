@@ -58,7 +58,5 @@ Public Class Cls_Datos
 		cn.Close()
 		cmd.Parameters.Clear()
 	End Sub
-
-
 End Class
 
