@@ -16,4 +16,9 @@ Public Class Cls_Negocio
 		objDatos.D_ActualizarEmpleados(enti)
 	End Sub
 
+	Public Sub N_EliminarEmpleados(enti As Cls_Entidad)
+		objDatos.D_EliminarEmpleados(enti)
+	End Sub
+
+
 End Class

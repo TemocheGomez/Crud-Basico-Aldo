@@ -47,6 +47,17 @@ Public Class Cls_Datos
 		cmd.Parameters.Clear()
 	End Sub
 
+	Public Sub D_EliminarEmpleados(enti As Cls_Entidad)
+		Dim cmd As New SqlCommand("DELETE from empleados where codEmp=@codEmp", cn)
+		cn.Open()
+		cmd.CommandType = CommandType.Text
+		With cmd.Parameters
+			.AddWithValue("@codEmp", enti.codEmp)
+		End With
+		cmd.ExecuteNonQuery()
+		cn.Close()
+		cmd.Parameters.Clear()
+	End Sub
 
 
 End Class
