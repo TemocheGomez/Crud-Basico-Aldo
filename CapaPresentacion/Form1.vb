@@ -19,4 +19,10 @@ Public Class Form1
         frm2.ShowDialog()
         ListarEmpleados()
     End Sub
+
+    Private Sub btn_Actualizar_Click(sender As Object, e As EventArgs) Handles btn_Actualizar.Click
+        Dim frm3 As New Form3
+        frm3.ShowDialog()
+        ListarEmpleados()
+    End Sub
 End Class
