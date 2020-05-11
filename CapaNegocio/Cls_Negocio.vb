@@ -12,4 +12,8 @@ Public Class Cls_Negocio
 		objDatos.D_InsertarEmpleados(enti)
 	End Sub
 
+	Public Sub N_ActualizarEmpleados(enti As Cls_Entidad)
+		objDatos.D_ActualizarEmpleados(enti)
+	End Sub
+
 End Class

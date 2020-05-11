@@ -31,6 +31,21 @@ Public Class Cls_Datos
 		cn.Close()
 		cmd.Parameters.Clear()
 	End Sub
+	Public Sub D_ActualizarEmpleados(enti As Cls_Entidad)
+		Dim cmd As New SqlCommand("UPDATE empleados SET nomEmp=@nomEmp,Edademp=@edadEmp,sexoEmp=@sexoEmp,sueldoEmp=@sueldoEmp where codEmp=@codEmp", cn)
+		cn.Open()
+		cmd.CommandType = CommandType.Text
+		With cmd.Parameters
+			.AddWithValue("@codEmp", enti.codEmp)
+			.AddWithValue("@nomEmp", enti.nomEmp)
+			.AddWithValue("@edadEmp", enti.edadEmp)
+			.AddWithValue("@sexoEmp", enti.sexoEmp)
+			.AddWithValue("@sueldoEmp", enti.sueldoEmp)
+		End With
+		cmd.ExecuteNonQuery()
+		cn.Close()
+		cmd.Parameters.Clear()
+	End Sub
 
 
 
