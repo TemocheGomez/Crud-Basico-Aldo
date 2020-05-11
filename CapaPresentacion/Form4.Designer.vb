@@ -23,7 +23,7 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
+        Me.TxtCod = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -36,12 +36,12 @@ Partial Class Form4
         Me.Button1.Text = "Eliminar Registro"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TxtNombre
+        'TxtCod
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(78, 24)
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(100, 20)
-        Me.TxtNombre.TabIndex = 19
+        Me.TxtCod.Location = New System.Drawing.Point(78, 24)
+        Me.TxtCod.Name = "TxtCod"
+        Me.TxtCod.Size = New System.Drawing.Size(100, 20)
+        Me.TxtCod.TabIndex = 19
         '
         'Label1
         '
@@ -58,7 +58,7 @@ Partial Class Form4
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(227, 88)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TxtNombre)
+        Me.Controls.Add(Me.TxtCod)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form4"
         Me.Text = "Form4"
@@ -68,6 +68,6 @@ Partial Class Form4
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents TxtNombre As TextBox
+    Friend WithEvents TxtCod As TextBox
     Friend WithEvents Label1 As Label
 End Class

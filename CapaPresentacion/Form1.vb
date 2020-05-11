@@ -25,4 +25,10 @@ Public Class Form1
         frm3.ShowDialog()
         ListarEmpleados()
     End Sub
+
+    Private Sub btn_Eliminar_Click(sender As Object, e As EventArgs) Handles btn_Eliminar.Click
+        Dim frm4 As New Form4
+        frm4.ShowDialog()
+        ListarEmpleados()
+    End Sub
 End Class
