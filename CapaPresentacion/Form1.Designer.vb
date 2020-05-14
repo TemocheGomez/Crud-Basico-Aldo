@@ -26,11 +26,13 @@ Partial Class Form1
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btn_Actualizar = New System.Windows.Forms.Button()
         Me.btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Dgv_Empleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Dgv_Empleados
         '
+        Me.Dgv_Empleados.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.Dgv_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dgv_Empleados.Location = New System.Drawing.Point(22, 25)
         Me.Dgv_Empleados.Name = "Dgv_Empleados"
@@ -64,11 +66,24 @@ Partial Class Form1
         Me.btn_Eliminar.Text = "Eliminar"
         Me.btn_Eliminar.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(533, 335)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(146, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "cambiando a TEAM-USS"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(717, 412)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_Eliminar)
         Me.Controls.Add(Me.btn_Actualizar)
         Me.Controls.Add(Me.btnAgregar)
@@ -77,6 +92,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.Dgv_Empleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -84,4 +100,5 @@ Partial Class Form1
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btn_Actualizar As Button
     Friend WithEvents btn_Eliminar As Button
+    Friend WithEvents Label1 As Label
 End Class
